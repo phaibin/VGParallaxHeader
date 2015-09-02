@@ -12,6 +12,7 @@ typedef NS_ENUM(NSInteger, VGParallaxHeaderMode) {
     VGParallaxHeaderModeFill,
     VGParallaxHeaderModeTop,
     VGParallaxHeaderModeTopFill,
+    VGParallaxHeaderModeFixTop,
 };
 
 typedef NS_ENUM(NSInteger, VGParallaxHeaderStickyViewPosition) {
@@ -55,8 +56,6 @@ typedef NS_ENUM(NSInteger, VGParallaxHeaderShadowBehaviour) {
                          mode:(VGParallaxHeaderMode)mode
                        height:(CGFloat)height
               shadowBehaviour:(VGParallaxHeaderShadowBehaviour)shadowBehaviour __deprecated_msg("Use sticky view instead of shadow");
-
-- (void)updateParallaxHeaderViewHeight:(CGFloat)height;
 
 - (void)shouldPositionParallaxHeader;
 
